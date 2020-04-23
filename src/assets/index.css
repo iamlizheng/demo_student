@@ -1,0 +1,172 @@
+/* css样式初始化 */
+body, dl, dd{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+    color: #b3bcc5;
+    font-size: 14px;
+}
+html, body, .wrapper {
+    height: 100%;
+    min-width: 700px;
+}
+
+/* 新增学生和编辑学生的form表单的样式 */
+form {
+    width: 400px;
+    margin: 50px auto;
+}
+form label {
+    width: 100px;
+    display: inline-block;
+    text-align: right;
+    padding-right: 10px; 
+    color: #000;
+    font-size: 16px;
+}
+form label.label-sex {
+    width: 20px;
+    text-align: left;
+   
+}
+form div {
+    margin: 10px 0;
+}
+
+form .btn {
+    padding: 5px 25px;
+}
+#add-student-form .btn {
+    font-size:14px;
+    width:65px;
+    /* height:20px; */
+}
+
+.student-list table {
+    width: 100%;
+}
+.student-list table thead {
+    background-color: #e3e8ee;
+    color: #646987;
+    font-size: 14px;
+}
+.student-list table tbody {
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+}
+.student-list table tr {
+    height: 30px;
+    line-height: 30px;
+}
+
+.student-list table .btn {
+    padding: 3px 10px;
+    color: #fff;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.student-list table .btn.edit {
+    background-color: #5cb85c;
+}
+.student-list table .btn.del {
+    margin-left:5px;
+    background-color: #d9534f;
+}
+
+.student-list table .btn.del:hover {
+    background-color: #c9302c;
+} 
+.student-list table .btn.edit:hover {
+    background-color: #398439;
+}
+
+.student-list .modal {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+}
+
+.student-list .modal .mask {
+    position:  fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.student-list .modal-content{
+    background-color: #fff;
+    width: 500px;
+    height: 450px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -250px;
+    margin-top: -225px;
+}
+.student-list .modal-content h3 {
+    color: #f40;
+    font-size:20px;
+    padding:30px 30px 0;
+}
+
+.student-list .modal-content form {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform:translate(-40%,-60%);
+    margin-top: 10px;
+}
+
+.student-list .modal-content #edit-form .btn{
+    padding: 5px 15px;
+    color: #fff;
+    background-color: #5cb85c;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+.student-list .modal-content #edit-form .btn.cancel{
+    margin-left:5px;
+    background-color: #d9534f;
+}
+.content-active {
+    display: block;
+}
+
+.search {
+    height: 60px;
+    line-height: 60px;
+    padding: 10px;
+}
+#search-inp {
+    font-size:14px;
+    width: 250px;
+    height: 30px;
+    line-height: 30px;
+    border-radius:5px;
+    outline: none;
+}
+#search-btn {
+    font-size:14px;
+    padding: 6px 15px;
+    background-color: #4d5e70;
+    color: #fff;
+    border: none;
+    outline: none;
+}
+#search-btn:hover {
+    cursor: pointer;
+}
+#search-btn:active {
+    background-color: #354457;
+}
